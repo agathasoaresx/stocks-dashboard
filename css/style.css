@@ -12,9 +12,6 @@ body {
 #main-header {
     height: 60px;
     background-color: #1d1d1d;
-    display: flex;
-    align-items: center;
-    gap: 15px;
     padding: 0 20px;
 }
 
@@ -27,6 +24,58 @@ body {
     height: 40px;
 }
 
-/*.wrapper {
+#main-header .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 60px;
+}
 
+#main-header span {
+    color: #ff8308;
+}
+
+#main-header button {
+    margin: 0 0 0 auto;
+    background: none;
+    border: 2px solid chocolate;
+    color: chocolate;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#main-header button:hover {
+    background: #000;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto; /* centraliza div */
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #11101050; /* 6 digitos e os 2 ultimos digitos são a opacidade da transparencia*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-content {
+    width: 400px;
+    min-width: 300px;
+    min-height: 200px;
+    background: #bb5a0b;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.modal .modal-content h1 {
+    margin: 0;
 }
