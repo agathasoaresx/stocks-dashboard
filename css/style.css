@@ -61,7 +61,7 @@ body {
     bottom: 0;
     right: 0;
     background: #11101050; /* 6 digitos e os 2 ultimos digitos são a opacidade da transparencia*/
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -69,13 +69,82 @@ body {
 .modal .modal-content {
     width: 400px;
     min-width: 300px;
-    min-height: 200px;
-    background: #bb5a0b;
+    min-height: 100px;
+    background: #3d3c3b;
     border-radius: 20px;
     padding: 20px;
+    position: relative;
 
 }
 
 .modal .modal-content h1 {
     margin: 0;
 }
+
+.modal .modal-content button.btn-close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: #fff;
+    font-family: 'Konkhmer Sleokchher', cursive;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+#add-stock form {
+    margin: 20px 0 0 0;
+    font-family: 'Konkhmer Sleokchher', cursive;
+
+}
+
+#ticker {
+    border: solid 2px #ff8308;
+    background: none;
+}
+
+#add-stock form input{
+    border-radius: 10px 10px 10px;  
+
+}
+
+#btnAdd {
+    background-color:#ff8308;
+    border: none;
+    width: 85px;
+    height: 23px;
+    color:#3d3c3b;
+    font-family: 'Konkhmer Sleokchher', cursive;
+    font-size: 12px;
+}
+
+#tickers-list {
+    display: flex;
+    gap: 30px;
+    padding: 20PX;
+
+}
+
+#tickers-list .ticker {
+    background-color:#3d3c3b ; /* 6 digitos e os 2 ultimos digitos são a opacidade da transparencia*/
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#tickers-list .ticker h2{
+    margin-top: 0;
+}
+
+#tickers-list .ticker p{
+    margin: 0;
+}
+
+
