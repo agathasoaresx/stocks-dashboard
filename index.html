@@ -21,14 +21,15 @@
     </header>
     <div class="wrapper" id="tickers-list">
         <div class="ticker">
-            <h2>AMZ</h2>
+            <button class="btn-close" onclick="removeTicker(event)">×</button>
+            <h2>AMZN</h2>
             <p>3,172.69</p>
         </div>
     </div>
     <div class="modal" id="add-stock">
         <div class="modal-content">
             <h1>Add Stock</h1>
-            <button class="btn-close" onclick="closeModal('#add-stock')">x</button>
+            <button class="btn-close" onclick="closeModal('#add-stock')">×</button>
             <form onsubmit="handleAddTicker(event)">
                 <label for="ticker">Ticker:</label>
                 <input type="text" name="ticker" id="ticker">

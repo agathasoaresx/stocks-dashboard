@@ -4,14 +4,14 @@ html, body {
 }
 
 body {
-    background-color: black;
+    background-color: #1B202C;
     color: #fff;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,Cantarell,"Fira Sans","Droid Sans",Helvetica Neue,sans-serif;
 }
 
 #main-header {
     height: 60px;
-    background-color: #1d1d1d;
+    background-color: #191A21;
     padding: 0 20px;
 }
 
@@ -32,14 +32,14 @@ body {
 }
 
 #main-header span {
-    color: #ff8308;
+    color: #BD93F9;
 }
 
 #main-header button {
     margin: 0 0 0 auto;
     background: none;
-    border: 2px solid chocolate;
-    color: chocolate;
+    border: 2px solid #61719A;
+    color: #61719A;
     font-size: 1.2rem;
     border-radius: 5px;
     cursor: pointer;
@@ -60,7 +60,7 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    background: #11101050; /* 6 digitos e os 2 ultimos digitos são a opacidade da transparencia*/
+    background: #000000a1; /* 6 digitos e os 2 ultimos digitos são a opacidade da transparencia*/
     display: none;
     justify-content: center;
     align-items: center;
@@ -70,7 +70,7 @@ body {
     width: 400px;
     min-width: 300px;
     min-height: 100px;
-    background: #3d3c3b;
+    background: #282A36;
     border-radius: 20px;
     padding: 20px;
     position: relative;
@@ -81,18 +81,17 @@ body {
     margin: 0;
 }
 
-.modal .modal-content button.btn-close {
+.modal .modal-content button.btn-close, #tickers-list .ticker button.btn-close {
     position: absolute;
     top: 5px;
     right: 15px;
     font-size: 20px;
     border: none;
     background: none;
-    color: #fff;
+    color: #FF79C6;
     font-family: 'Konkhmer Sleokchher', cursive;
     padding: 10px;
     cursor: pointer;
-
 }
 
 #add-stock form {
@@ -102,7 +101,7 @@ body {
 }
 
 #ticker {
-    border: solid 2px #ff8308;
+    border: solid 2px #BD93F9;
     background: none;
 }
 
@@ -112,11 +111,11 @@ body {
 }
 
 #btnAdd {
-    background-color:#ff8308;
+    background-color:#BD93F9;
     border: none;
     width: 85px;
     height: 23px;
-    color:#3d3c3b;
+    color:#282A36;
     font-family: 'Konkhmer Sleokchher', cursive;
     font-size: 12px;
 }
@@ -129,7 +128,7 @@ body {
 }
 
 #tickers-list .ticker {
-    background-color:#3d3c3b ; /* 6 digitos e os 2 ultimos digitos são a opacidade da transparencia*/
+    background-color:#282A36 ; /* 6 digitos e os 2 ultimos digitos são a opacidade da transparencia*/
     padding: 20px;
     justify-content: space-between;
     align-items: center;
@@ -137,6 +136,7 @@ body {
     width: 100px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 #tickers-list .ticker h2{
@@ -147,4 +147,16 @@ body {
     margin: 0;
 }
 
+.ticker p.increase{
+    color: rgb(68, 177, 18);
+}
 
+.ticker p.decrease {
+    color: rgb(219, 45, 14);
+}
+
+#tickers-list .ticker button.btn-close{
+    line-height: 14px;
+    right: 5px;
+    display: none;
+}
