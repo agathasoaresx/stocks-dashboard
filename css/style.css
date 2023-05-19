@@ -32,7 +32,7 @@ body {
 }
 
 #main-header span {
-    color: #BD93F9;
+    color: #BD93F9a1;
 }
 
 #main-header button {
@@ -103,11 +103,16 @@ body {
 #ticker {
     border: solid 2px #BD93F9;
     background: none;
+    font-family: 'Konkhmer Sleokchher', cursive;
+    color: #F8F8E6;
+    font-size: 12px;
+    
+    
 }
 
 #add-stock form input{
-    border-radius: 10px 10px 10px;  
-
+    border-radius: 10px 10px 10px;
+    height: 25px;
 }
 
 #btnAdd {
@@ -141,14 +146,16 @@ body {
 
 #tickers-list .ticker h2{
     margin-top: 0;
+    color: #F8F8E6;
 }
 
 #tickers-list .ticker p{
     margin: 0;
+    color: #F8F8E6;
 }
 
 .ticker p.increase{
-    color: rgb(68, 177, 18);
+    color: #50D94C;
 }
 
 .ticker p.decrease {
