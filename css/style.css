@@ -153,12 +153,10 @@ body {
 
 #tickers-list .ticker h2{
     margin-top: 0;
-    color: #F8F8E6;
 }
 
 #tickers-list .ticker p{
     margin: 0;
-    color: #F8F8E6;
 }
 
 .ticker p.increase{
