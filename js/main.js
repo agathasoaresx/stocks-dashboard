@@ -17,6 +17,7 @@ const handleModalClose = (event) => {
 const handleAddTicker = async (event) => {
     event.preventDefault() // impede que o form seja enviado
     const ticker = event.target.ticker.value // pega o valor do input ticker
+
     try{
         const response = await fetch(`https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${ticker}&apikey=HAUCFV4MBFM2A2Z1`) // faz a requisição na API
         const data = await response.json() // transforma a resposta JSON em objeto
@@ -42,6 +43,7 @@ const handleAddTicker = async (event) => {
                 <button class="btn-close" onclick="removeTicker(event)">×</button>
                 <h2>${ticker}</h2>
                 <p class="${priceChange}">${Symbol} U$ ${priceFormatted}</p>
+                <button class="btn-update" onclick="updateTicker(event)">Update</button>
             </div>
             `
             const tickersList = document.querySelector("#tickers-list")
@@ -80,6 +82,11 @@ const removeTicker = (event) => {
     const btnClose = event.target
     const ticker = btnClose.closest('.ticker')
     ticker.remove()
+}
+
+const updateTicker = (event) => {
+    const btnUpdate = ticker.querySelectorAll(".btn-update")
+    ticker.update()
 }
 
 const modal = document.querySelector(".modal")
