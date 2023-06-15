@@ -113,23 +113,6 @@ body {
     margin-right: 3px;   
 }
 
-.ticker button.btn-update {
-    border: none;
-    width: 70px;
-    height: 30px;
-    font-family: 'Konkhmer Sleokchher', cursive;
-    font-size: 12px;
-    color: #BD93F9a1;
-    background-color: #1B202Ca1;
-    border: solid 2px #BD93F9a1;
-    margin-top: 15px;
-    border-radius: 10px 10px 10px;
-}
-
-.ticker button.btn-update:hover {
-    background-color: #BD93F9a1;
-    color: #1B202C;
-}
 
 #add-stock form input{
     border-radius: 10px 10px 10px;
@@ -192,5 +175,11 @@ body {
 #tickers-list .ticker button.btn-close{
     line-height: 14px;
     right: 5px;
+    display: none;
+}
+
+#tickers-list .ticker button.btn-refresh{
+    right: 25px;
+    top: -7px;
     display: none;
 }
